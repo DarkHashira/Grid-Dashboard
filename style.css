@@ -59,3 +59,10 @@ body{
     align-items: center;
     gap: 20px;
 }
+
+.header .top-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
