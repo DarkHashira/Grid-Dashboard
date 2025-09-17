@@ -28,7 +28,7 @@ body{
 }
 
 .header{
-    background-color: grey;
+    border-bottom: black 1px solid;
 }
 .menu{
     display: grid;
@@ -42,4 +42,20 @@ body{
     align-items: center;
     margin-left: 30px;
     gap: 15px;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+.header-top{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.header .top-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
