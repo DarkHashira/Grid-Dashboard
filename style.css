@@ -43,6 +43,12 @@ body{
     margin-left: 30px;
     gap: 15px;
 }
+.menu_items:hover{
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+    scale: 1.04;
+}
 
 .header{
     display: grid;
@@ -65,4 +71,44 @@ body{
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+
+.header-bottom{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.greet{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+    margin-left: 50px;
+}
+.greet .hello{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.btn button{
+    border: none;
+    background-color: #0BA6DF;
+    color: white;
+    height: 30px;
+    width: 80px;
+    border-radius: 100px;
+}
+.btn button:hover{
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    transition: 1s;
+    scale: 1.03;
+    border: 1px solid black;
 }
