@@ -2,10 +2,11 @@ body{
     margin: 0;
     padding: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100vh;
 }
 
 .container{
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     display: grid;
     grid-template-columns: clamp(200px,20%,250px)  4fr ;
@@ -168,25 +169,62 @@ body{
     height: 18px;
 }
 
-.main-right{
+.main-right {
     display: grid;
-    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 10px;
-    box-sizing: border-box;
-}
-.profiles{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 1fr;
-    gap: 10px;
-    background-color: white;
-    height: 100%;
+    padding: 0 20px 30px 0; 
 }
 
-.profile{
+.announcements-section,
+.trending-section {
+    display: flex; 
+    flex-direction: column;
+}
+
+.side-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+    flex-grow: 1; 
     display: flex;
-    justify-content: flex-start;
-    gap: 4px;
+    flex-direction: column;
+    justify-content: space-around; 
+}
+.announcement-item h4 {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+}
+
+.announcement-item p {
+    margin: 0;
+    font-size: 12px;
+    color: grey;
+}
+
+.main-right hr {
+    border: none;
+    border-top: 1px solid #e0e9f4;
+    margin: 10px 0;
+}
+
+.profile {
+    display: flex;
     align-items: center;
+    gap: 15px;
+}
+
+.profile img {
+    height: 40px;
+    border-radius: 50px;
+}
+
+.profile-details p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.profile-details span {
+    font-size: 12px;
+    color: grey;
 }
